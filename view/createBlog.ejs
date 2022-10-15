@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header') %>
+<body>
+    <%- include('./partials/navbar') %>
+    <main>
+        <h1>Contact Us</h1>
+        <form id="NewBlogForm" method="POST" action="/blog">
+            <div id="FormField">
+                <label>Title</label>
+                <input type="text" id="title" class="formInput"  name="title" />
+            </div>
+            <div id="FormField">
+                <label>Snippet</label>
+                <input type="text" id="snippet"  class="formInput" name="snippet" />
+            </div>
+            <div id="FormField">
+                <label>Main message</label>
+                <textarea rows="8" id="body" class="BlogTextarea" name="body"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="CreateBlogSubmit" />
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+<%- include('./partials/footer') %>
+</html>

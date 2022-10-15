@@ -1,0 +1,19 @@
+{
+  "name": "node_information_site",
+  "version": "1.0.0",
+  "description": "This is a basic information site created with Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "author": "Albert Hu",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5"
+  }
+}

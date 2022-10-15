@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header') %>
+<body>
+    <%- include('./partials/navbar') %>
+    <main>
+        <h1>Blog</h1>
+        <div id="CreateNewBlogLink"><a href="/create_blog">Submit new blog</a></div>
+    </main>
+    <div id="blog_section">
+        <% if(blogs.length > 0) {%>
+        <% blogs.forEach(blog=>{ %>
+        <div id="blog_wrapper">
+            <a class="singleBlog" href="/blog/<%= blog._id %>">
+                <h3><%= blog.title %></h3>
+                <p id="snippet"><%= blog.snippet %></p>
+                <p><%= blog.body %></p>
+            </a>
+        </div>
+        <% }) %>
+        <% } else { %>
+        <% } %>
+    </div>
+    <script src="index.js"></script>
+</body>
+<%- include('./partials/footer') %>
+</html>

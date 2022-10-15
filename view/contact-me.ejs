@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header') %>
+<body>
+    <%- include('./partials/navbar') %>
+    <main>
+        <h1>Contact Us</h1>
+        <form id="NewBlogForm" method="post" action="/">
+            <div id="FormField">
+                <label>Full Name</label>
+                <input type="text" name="name" />
+            </div>
+            <div id="FormField">
+                <label>Email</label>
+                <input type="text" name="email" />
+            </div>
+            <div id="FormField">
+                <label>Subject line</label>
+                <input type="text" name="subject" />
+            </div>
+            <div id="FormField">
+                <label>Main message</label>
+                <textarea rows="8"></textarea>
+            </div>
+            <input type="button" />
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+<%- include('./partials/footer') %>
+</html>
